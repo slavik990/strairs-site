@@ -1,6 +1,15 @@
 <html>
 	<body>esfsdfsdfsdf
 		<p>Welcome to <%=title%></p>
+		<form id="form1" method="post" action="https://accounts.google.com/o/oauth2/auth?"  target="_blank">
+    <div>
+        <input type="hidden" name="response_type" value="code" />
+        <input type="hidden" name="client_id" value="38156718110.apps.googleusercontent.com" />
+        <input type="hidden" name="redirect_uri" value="http://localhost:3000/collback" />
+        <input type="hidden" name="scope" value="https://www.googleapis.com/auth/calendar" />
+        <input type="submit" value="go" />
+    </div>
+    </form>
 	</body>
 </html>
   
